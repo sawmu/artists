@@ -1,5 +1,6 @@
-import type { NextPage } from 'next'
-import Head from 'next/head'
+import type { NextPage } from 'next';
+import Head from 'next/head';
+import Header from '../components/Header'
 
 
 const Home: NextPage = () => {
@@ -10,10 +11,10 @@ const Home: NextPage = () => {
         <meta name="description" content="Artists Description" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-    <h1 className='text-red-500'>Lets build an AWESOME portfolio</h1>
-     {/* Header */}
+      {/* Header */}
+      <Header />
 
-     {/* Hero */}
+      {/* Hero */}
 
      
     </div>

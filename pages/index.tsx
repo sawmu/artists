@@ -20,7 +20,7 @@ const Home: NextPage = () => {
         <Hero />
       </section>
 
-      <section id='hero'></section>
+      <section id='hero'>
         <Artists />
       </section>
 

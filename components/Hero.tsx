@@ -7,7 +7,7 @@ type Props = {}
 function Hero({}: Props) {
   return (
     <div className='hero-backgorund  '>
-        <div className="container">
+        <div className="max-w-7xl mx-auto">
             <div className='h-screen flex justify-center items-center text-center'>
                 <div className="flex flex-wrap items-center  text-center">
                     <div className=" flex flex-col justify-end">

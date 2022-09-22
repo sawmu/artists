@@ -6,7 +6,7 @@ type Props = {}
 
 function Header({}: Props) {
   return (
-    <header className='sticky top-0 p-3 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
+    <header className='top-0 p-3 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center'>
         <motion.div
          initial={{
             x: -500,
@@ -22,24 +22,34 @@ function Header({}: Props) {
             duration: 1.5,
          }}
          className='flex flex-row items-center'>
+
+            <SocialIcon 
+                url="https://www.youtube.com/c/DinaWanderlust" 
+                fgColor=' rgb(243,121,32)' 
+                bgColor='transparent' 
+                target='_blank' 
+                rel='noopener noreferrer' 
+            />
+
+            <SocialIcon 
+                url="https://www.facebook.com/sawmuka.hbawaye.3" 
+                fgColor=' rgb(243,121,32)' 
+                bgColor='transparent' 
+                target='_blank' 
+                rel='noopener noreferrer' 
+            />
            
             <SocialIcon 
-                url="https://www.youtube.com/c/DinaWanderlust" 
-                fgColor='gray' 
+                url="https://www.linkedin.com/in/mukahbaw/" 
+                fgColor=' rgb(243,121,32)' 
                 bgColor='transparent' 
+                target='_blank' 
+                rel='noopener noreferrer' 
             />
 
-            <SocialIcon 
-                url="https://www.youtube.com/c/DinaWanderlust" 
-                fgColor='gray' 
-                bgColor='transparent' 
-            />
+           
 
-            <SocialIcon 
-                url="https://www.youtube.com/c/DinaWanderlust" 
-                fgColor='gray' 
-                bgColor='transparent' 
-            />
+            
         </motion.div>
 
         <motion.div
@@ -60,8 +70,10 @@ function Header({}: Props) {
             <SocialIcon 
                 className='cursor-pointer'
                 network='email'
-                fgColor='gray' 
+                fgColor=' rgb(243,121,32)' 
                 bgColor='transparent' 
+                target='_blank' 
+                rel='noopener noreferrer'
             />
             <p className='uppercase hidden md:inline-flex text-sm text-gray-400'>Get In Touch</p>
         </motion.div>

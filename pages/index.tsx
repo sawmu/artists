@@ -12,7 +12,9 @@ const Home: NextPage = () => {
         <title>Artists</title>
         <meta name="description" content="Artists Description" />
         <link rel="icon" href="/favicon.ico" />
-        
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" rel="stylesheet" />
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
       </Head>
    
       <Header />

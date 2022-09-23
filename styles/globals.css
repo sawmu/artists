@@ -9,3 +9,11 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.slick-dots li.slick-active button:before {
+    color: #F37920;
+}
+
+.slick-dots li button:before {
+    color: #FBFBFB;
+}

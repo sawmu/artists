@@ -3,6 +3,8 @@ import Head from 'next/head';
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Artists from '../components/Artists'
+import Brands from '../components/Brands'
+
 
 
 const Home: NextPage = () => {
@@ -23,8 +25,13 @@ const Home: NextPage = () => {
         <Hero />
       </section>
 
-      <section id='hero'>
+      <section id='artists' className='max-w-7xl mx-auto'>
         <Artists />
+        
+      </section>
+
+      <section id='brand' className='h-screen'>
+        <Brands />
       </section>
 
      

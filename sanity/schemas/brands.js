@@ -6,14 +6,15 @@ export default {
 
     {
       name: "title",
-      title: "Title",
+      title: "Aplphabet",
       type: "string",
     },
 
     {
       name: "brand",
       title: "Brand",
-      type: "string",
+      type: 'array',
+      of: [{type: 'string'}]
     },
 
 

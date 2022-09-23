@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         
       </section>
 
-      <section id='brand' className='h-screen'>
+      <section id='brand' className='bg-slate-50'>
         <Brands />
       </section>
 

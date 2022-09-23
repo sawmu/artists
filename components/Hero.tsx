@@ -1,13 +1,14 @@
 import React from 'react';
-import BannerImage from '../public/banner.jpg';
-import Image from 'next/image';
+import BannerImage from '../public/banner/hero_banner.png';
+
 
 type Props = {}
 
 function Hero({}: Props) {
   return (
-    <div className='hero-backgorund  '>
+    <div className="bg-[url('../public/banner/hero_banner.png')] bg-center bg-no-repeat bg-cover">
         <div className="max-w-7xl mx-auto">
+       
             <div className='h-screen flex items-center'>
                 <div className="flex flex-wrap justify-center lg:justify-end  min-w-full">
                     <div className="px-20 text-center lg:text-left ">
@@ -20,6 +21,8 @@ function Hero({}: Props) {
                 </div>  
             </div>
         </div>
+
+        
         
 
     </div>

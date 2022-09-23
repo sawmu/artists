@@ -8,7 +8,7 @@ function Artists({}: Props) {
   return (
     <div className='h-full p-3'>
       <div className="flex  justify-center">
-        <h1 className='font-bold mb-2 text-white text-4xl md:text-5xl text-center'>
+        <h1 className='font-bold mb-2 text-white text-2xl md:text-3xl lg:text-4xl text-center'>
           #MONOCREATORS #GOPLAY
         </h1>
       </div>

@@ -15,8 +15,6 @@ function Artists_list({}: Props) {
       swipeToSlide: true,
       dots: true,
       arrows: false,
-    //   autoplay: true,
-    //   autoplaySpeed: 7000,
       responsive: [
         {
           breakpoint: 1024,

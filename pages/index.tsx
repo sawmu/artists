@@ -1,13 +1,23 @@
-import type { NextPage } from 'next';
+import type { GetStaticProps } from 'next';
 import Head from 'next/head';
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Artists from '../components/Artists'
 import Brands from '../components/Brands'
+import { pageInfo, Artist, Brand, Social} from "../typings"
+import { fetchPageInfo } from '../utils/fetchPageInfo';
+import { fetchArtists } from '../utils/fetchArtists';
+import { fetchBrands } from '../utils/fetchBrands';
+import { fetchSocial } from '../utils/fetchSocial';
 
+type Props = {
+  pageInfo: pageInfo;
+  artists: Artist[];
+  brands: Brand[];
+  socials: Social[];
+}
 
-
-const Home: NextPage = () => {
+const Home = ({pageInfo, artists, brands, socials}: Props) => {
   return (
     <div className='bg-[rgb(10,10,10)] text-white h-screen snap-y snap-mandatory overflow-scroll z-0'>
       <Head>
@@ -39,4 +49,28 @@ const Home: NextPage = () => {
   )
 }
 
-export default Home
+export default Home;
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+
+  const pageInfo: pageInfo = await fetchPageInfo();
+  const artists: Artist[] = await fetchArtists();
+  const brands: Brand[] = await fetchBrands();
+  const socials: Social[] = await fetchSocial();
+
+  return {
+    props: {
+      pageInfo,
+      artists,
+      brands,
+      socials,
+    },
+
+    // Next.js will attempt to re-generate the page:
+    // - When a request comes in
+    // - At most once every 10 secounds
+
+    revalidate: 10,
+  };
+
+};

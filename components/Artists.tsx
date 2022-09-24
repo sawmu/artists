@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import Image from 'next/image'
 import { motion } from "framer-motion";
 import { urlFor } from '../sanity';
 import { Artist } from "../typings";
@@ -83,7 +84,8 @@ function Artists({artists}: Props) {
         {artists.map((artist, index) => (
                 <div key={index} className='text-center py-5 px-5 flex flex-col justify-center items-center'>
                     <div className='text-center flex flex-col justify-center items-center'>
-                        <img alt={artist.name} src={urlFor(artist.Image)} width="351px" height="351px" />
+                        <img alt={artist.name} src={urlFor(artist?.Image).url()} width="351px" height="351px" />
+                        
                         <h2 className='capitalize font-bold text-2xl md:text-3xl py-5'>{artist.name}</h2>
                     </div>
                 </div>

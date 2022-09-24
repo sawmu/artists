@@ -1,10 +1,10 @@
 import type { GetStaticProps } from 'next';
 import Head from 'next/head';
-import Header from '../components/Header'
-import Hero from '../components/Hero'
-import Artists from '../components/Artists'
-import Brands from '../components/Brands'
-import Footer from '../components/Footer'
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Artists from '../components/Artists';
+import Brands from '../components/Brands';
+import Footer from "../components/Footer"
 import { PageInfo, Artist, Brand, Social} from "../typings"
 import { fetchPageInfo } from '../utils/fetchPageInfo';
 import { fetchArtists } from '../utils/fetchArtists';

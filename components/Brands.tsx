@@ -27,8 +27,8 @@ function Brands({brands}: Props) {
                                     <p>{brandtitle.title}</p>
                                 </div>
                                 <div className="flex flex-row flex-wrap ">
-                                {brandtitle.brand.map((bname) => (
-                                    <div key={bname._id} className='w-1/2  md:w-1/3 lg:w-1/4 xl:w-1/5 '>
+                                {brandtitle.brand.map((bname, index) => (
+                                    <div key={index} className='w-1/2  md:w-1/3 lg:w-1/4 xl:w-1/5 '>
                                         <p className='text-left text-sm py-3 pr-3'>{bname}</p>
                                     </div>
                                 ))}

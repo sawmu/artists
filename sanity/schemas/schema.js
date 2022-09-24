@@ -23,5 +23,6 @@ export default createSchema({
     artists,
     brands,
     social,
+  
   ]),
 })

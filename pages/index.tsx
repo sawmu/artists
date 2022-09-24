@@ -4,14 +4,15 @@ import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Artists from '../components/Artists'
 import Brands from '../components/Brands'
-import { pageInfo, Artist, Brand, Social} from "../typings"
+import Footer from '../components/Footer'
+import { PageInfo, Artist, Brand, Social} from "../typings"
 import { fetchPageInfo } from '../utils/fetchPageInfo';
 import { fetchArtists } from '../utils/fetchArtists';
 import { fetchBrands } from '../utils/fetchBrands';
 import { fetchSocial } from '../utils/fetchSocial';
 
 type Props = {
-  pageInfo: pageInfo;
+  pageInfo: PageInfo;
   artists: Artist[];
   brands: Brand[];
   socials: Social[];
@@ -29,19 +30,23 @@ const Home = ({pageInfo, artists, brands, socials}: Props) => {
         <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" rel="stylesheet" />
       </Head>
    
-      <Header />
+      <Header socials={socials} />
 
       <section id='hero' className='-mt-20'>
-        <Hero />
+        <Hero pageInfo={pageInfo} />
       </section>
 
       <section id='artists' className='max-w-7xl mx-auto'>
-        <Artists />
+        <Artists artists={artists} />
         
       </section>
 
       <section id='brand' className='bg-slate-50'>
-        <Brands />
+        <Brands brands={brands} />
+      </section>
+
+      <section id='footer' className='bg-slate-50'>
+        <Footer />
       </section>
 
      
@@ -53,7 +58,7 @@ export default Home;
 
 export const getStaticProps: GetStaticProps<Props> = async () => {
 
-  const pageInfo: pageInfo = await fetchPageInfo();
+  const pageInfo: PageInfo = await fetchPageInfo();
   const artists: Artist[] = await fetchArtists();
   const brands: Brand[] = await fetchBrands();
   const socials: Social[] = await fetchSocial();

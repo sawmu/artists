@@ -4,10 +4,7 @@ import { sanityClient } from "../../sanity";
 import { Brand } from "../../typings"
 
 const query = groq`
-    *[_type == 'brands']{
-      ...,
-      brand[]
-    }
+*[_type == 'brands'] | order(title asc) {title, brand}
 `
 
 type Data = {

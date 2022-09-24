@@ -13,5 +13,5 @@ Live: https://artists.mukabaw.com/
 
 
 
-<img src="./webImage.png" width="50%" height="50%">
+<img src="./webImage.png" width="100%" height="100%">
 

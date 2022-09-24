@@ -13,5 +13,5 @@ Live: https://artists.mukabaw.com/
 
 
 
-<img src="./assets/image/sunday_prophet.png" width="50%" height="50%">
+<img src="./webImage.png" width="50%" height="50%">
 

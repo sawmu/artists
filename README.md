@@ -2,7 +2,8 @@
 
 Live: https://artists.mukabaw.com/
 
-## Build 
+
+## 💻Tech Stack
 
 - React.
 - Sanity.io.

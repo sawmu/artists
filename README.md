@@ -1,9 +1,9 @@
-## The Artists (NextJS & Sanity)
+# The Artists (NextJS & Sanity)
 
 Live: https://artists.mukabaw.com/
 
 
-# 💻 Tech Stack
+## 💻 Tech Stack
 
 - React.
 - Sanity.io.

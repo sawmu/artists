@@ -1,4 +1,4 @@
-# The Artist (NextJS & Sanity)
+# The Artists (NextJS & Sanity)
 
 Live: https://artists.mukabaw.com/
 

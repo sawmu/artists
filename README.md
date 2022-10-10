@@ -1,8 +1,9 @@
-# The Artist (NextJS & Sanity)
+# The Artists (NextJS & Sanity)
 
 Live: https://artists.mukabaw.com/
 
-## Build 
+
+## 💻 Tech Stack
 
 - React.
 - Sanity.io.
@@ -10,5 +11,7 @@ Live: https://artists.mukabaw.com/
 - Framer Motion.
 
 
-<img src="./webImage.png" width="50%" height="50%">
+
+
+<img src="./webImage.png" width="100%" height="100%">
 

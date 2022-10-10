@@ -10,8 +10,5 @@ Live: https://artists.mukabaw.com/
 - Framer Motion.
 
 
-
-
-
 <img src="./webImage.png" width="50%" height="50%">
 
